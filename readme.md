@@ -23,7 +23,7 @@ Dumping Leaked Objects
 -----------------------------------------------------------------------------------------------------|
 0   ptr = 0000000000FB1810 | next = 0000000000FB17E0 | units = 1    | struct_name = student_t  | is_root = FALSE |
 -----------------------------------------------------------------------------------------------------|
-student_t[0]->stud_name = shivani
+student_t[0]->stud_name = deepak
 student_t[0]->rollno = 0
 student_t[0]->age = 0
 student_t[0]->aggregate = 0.000000
