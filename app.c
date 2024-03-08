@@ -68,9 +68,9 @@ main(int argc, char **argv){
     student_t *abhishek = xcalloc(object_db, "student_t", 1);
     mld_set_dynamic_object_as_root(object_db, abhishek);
 
-    student_t *shivani = xcalloc(object_db, "student_t", 1);
-    strncpy(shivani->stud_name, "shivani", strlen("shivani"));
-    //abhishek->best_colleage = shivani;
+    student_t *deepak = xcalloc(object_db, "student_t", 1);
+    strncpy(shivani->stud_name, "deepak", strlen("deepak"));
+    //abhishek->best_colleage = deepak;
 
     emp_t *joseph = xcalloc(object_db, "emp_t", 2);
     mld_set_dynamic_object_as_root(object_db, joseph);
