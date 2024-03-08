@@ -1,31 +1,30 @@
-##### How to run the sample usage of the library:
+#### Run the following commands
+##### Build the executable for sample testing:
 
 ```bash
-gcc -g -c mld.c -o mld.o
-gcc -g -c LinkedList/LinkedListApi.c -o LinkedList/LinkedListApi.o
-gcc -g -c app.c -o app.o
-gcc -g -o exe app.o LinkedList/LinkedListApi.o mld.o
+make
 ```
 
 ##### Run the program as :
 ```bash
-./exe
+.\exe.exe
+```
+##### Clean the object files and executable :
+```bash
+make clean
 ```
 
 
-The program will print the leaked objects as below.
-Program also print the structure db and object db, but here i am pasting the final
-outcome of the program - set of leaked objects. As you can see, in app.c, I had intentionally leaked
-the below object which is being shown as leaked.
+The program will ```printf``` the struct db and object db and the leaked objects.
 
 ```bash
+Leaked Objects : 
 Dumping Leaked Objects
 -----------------------------------------------------------------------------------------------------|
-0   ptr = 0x55cf26d86a40 | next = 0x55cf26d86a10 | units = 1    | struct_name = student_t  | is_root = FALSE |
+0   ptr = 0000000000FB1810 | next = 0000000000FB17E0 | units = 1    | struct_name = student_t  | is_root = FALSE |
 -----------------------------------------------------------------------------------------------------|
 student_t[0]->stud_name = shivani
 student_t[0]->rollno = 0
 student_t[0]->age = 0
 student_t[0]->aggregate = 0.000000
-student_t[0]->best_colleage = (nil)
-```
+student_t[0]->best_colleage = 0000000000000000```
